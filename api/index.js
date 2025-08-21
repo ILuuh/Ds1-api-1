@@ -1,20 +1,20 @@
 const express = require("express");
 
-const mysql = require("mysql2/promise");
+// const mysql = require("mysql2/promise");
 
-const stringConnection = {
-    host: 'localhost',
-    user: "root",
-    database: 'teste2s2025',
-    port: 3306
-};
+// const stringConnection = {
+//     host: 'localhost',
+//     user: "root",
+//     database: 'teste2s2025',
+//     port: 3307
+// };
 
-async function conectar() {
-    const connection = await mysql.createConnection({
-        stringConnection
-    });
-    return connection;
-}
+// async function conectar() {\
+//     const connection = await mysql.createConnection({
+//         stringConnection
+//     });
+//     return connection;
+// }
 
 const app = express();
 
@@ -26,7 +26,7 @@ app.get("/", () => {
 });
 
 app.get("/users", ( req, resp) => {
-    resp.send({data: [{"username": "jose", "userpsw": "1223"}, {"username": "carlos", "userpsw": "123"}]})
+    resp.send({data: [{"username": "jose", "userpsw": "1223"}, {"username": "carlos", "userpsw": "123"}, {"username": "Bianca", "userpsw": "123"}]})
 });
 
 app.get("/roles", ( req, resp) => {
@@ -35,7 +35,7 @@ app.get("/roles", ( req, resp) => {
 
 const port = 3500;
 
-const conn = conectar();
+// const conn = conectar();
 
 app.listen(port, () => {
     console.log(`servidor rodando na porta: ${port} !`)
