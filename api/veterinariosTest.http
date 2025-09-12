@@ -1,0 +1,31 @@
+###
+GET http://localhost:3500/api/veterinarios
+
+###
+GET http://localhost:3500/api/veterinarios/1
+
+###
+POST http://localhost:3500/api/veterinarios
+Content-Type: application/json
+
+{
+    "nome" : "Dra. Fernanda Souza",    
+    "telefone" : "11999990002",    
+    "email" : "fernanda@vet.com",    
+    "crm" : "CRM002"
+}
+
+###
+PUT http://localhost:3500/api/veterinarios/1
+Content-Type: application/json
+
+{
+    "nome" : "Dr. Carlos Almeida Silva",    
+    "telefone" : "11999990001",    
+    "email" : "carlos.silva@vet.com",    
+    "crm" : "CRM001"
+}
+###
+DELETE http://localhost:3500/api/veterinarios/2
+Content-Type: application/json
+
