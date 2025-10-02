@@ -1,0 +1,25 @@
+###
+GET http://localhost:3500/api/especies
+
+###
+GET http://localhost:3500/api/especies/1
+
+###
+POST http://localhost:3500/api/especies
+Content-Type: application/json
+
+{
+    "especie" : "Rato"
+}
+
+###
+PUT http://localhost:3500/api/especies/8
+Content-Type: application/json
+
+{
+    "especie" : "Lagarto"
+}
+###
+DELETE http://localhost:3500/api/especies/8
+Content-Type: application/json
+

@@ -1,0 +1,21 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node --watch index.js"
+  },
+  "keywords": [],
+  "author": "y",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0",
+    "mysql2": "^3.15.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "y"
+  },
+  "description": ""
+}

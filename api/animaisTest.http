@@ -1,0 +1,33 @@
+###
+GET http://localhost:3500/api/animais
+
+###
+GET http://localhost:3500/api/animais/1
+
+###
+POST http://localhost:3500/api/animais
+Content-Type: application/json
+
+{
+    "animal" : "Mario",    
+    "idade" : "5",    
+    "id_dono" : "1",    
+    "id_raca" : "2",
+    "id_especie" : "1"
+}
+
+###
+PUT http://localhost:3500/api/animais/1
+Content-Type: application/json
+
+{
+    "animal" : "Robert",    
+    "idade" : "5",    
+    "id_dono" : "1",    
+    "id_raca" : "2",
+    "id_especie" : "1"
+}
+###
+DELETE http://localhost:3500/api/animais/2
+Content-Type: application/json
+

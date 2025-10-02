@@ -1,0 +1,7 @@
+GET http://localhost:3500/
+
+###
+GET http://localhost:3500/users
+
+###
+GET http://localhost:3500/roles
