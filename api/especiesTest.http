@@ -1,0 +1,27 @@
+###
+# router param
+GET http://localhost:3500/api/especies
+
+###
+# router param
+GET http://localhost:3500/api/especies/1
+
+###
+POST http://localhost:3500/api/especies
+Content-Type: application/json; charset=utf-8
+
+ {
+    "especie": "rato"
+  }
+
+###
+PUT http://localhost:3500/api/especies/2
+Content-Type: application/json; charset=utf-8
+
+{
+    "especie": "rato"
+}
+
+###
+DELETE http://localhost:3500/api/especies/3
+

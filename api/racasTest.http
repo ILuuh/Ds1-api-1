@@ -1,0 +1,27 @@
+###
+#usar o rest client, para executar a roda click em "Send Request"
+###
+GET http://localhost:3500/api/racas
+
+###
+# router param
+GET http://localhost:3500/api/racas/1
+
+###
+POST http://localhost:3500/api/racas
+Content-Type: application/json
+
+{
+    "raca" : "gato"
+}
+
+###
+PUT http://localhost:3500/api/racas/1
+Content-Type: application/json
+
+{
+    "raca" : "largato"
+}
+
+###
+DELETE http://localhost:3500/api/racas/3
